@@ -52,7 +52,7 @@ class zEvent:
         if key:
             self._mapping[key] = callback
 
-    def remove(key: str):
+    def remove(self, key: str):
         if key in self._mapping:
             callback = self._mapping.pop(key)
             self._registered.remove(callback)
